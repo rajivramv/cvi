@@ -1,0 +1,80 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>High-Pass Filter</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+html,body { 
+	/* Default Font */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+</style>
+
+</head>
+
+<body>
+<H1 class=firstHeading id=firstHeading><FONT size=5>High-pass filter</FONT></H1>
+<P>A <B>high-pass filter</B> (HPF) is a device that passes high <A 
+title=Frequency href="http://en.wikipedia.org/wiki/Frequency">frequencies</A> 
+and <A title=Attenuation 
+href="http://en.wikipedia.org/wiki/Attenuation">attenuates</A> (i.e., reduces 
+the amplitude of) frequencies lower than its <A title="Cutoff frequency" 
+href="http://en.wikipedia.org/wiki/Cutoff_frequency">cutoff frequency</A>. A 
+high-pass <A title="Filter (signal processing)" 
+href="http://en.wikipedia.org/wiki/Filter_%28signal_processing%29">filter</A> is 
+usually modeled as a <A class=mw-redirect title="Linear time-invariant system" 
+href="http://en.wikipedia.org/wiki/Linear_time-invariant_system">linear 
+time-invariant system</A>. It is sometimes called a <B>low-cut filter</B> or 
+<B>bass-cut filter</B>.</P>
+<P>High-pass filters have many uses, such as blocking DC from circuitry 
+sensitive to non-zero average voltages or <A title="Radio frequency" 
+href="http://en.wikipedia.org/wiki/Radio_frequency">RF</A> devices. They can 
+also be used in conjunction with a <A title="Low-pass filter" 
+href="http://en.wikipedia.org/wiki/Low-pass_filter">low-pass filter</A> to make 
+a <A class=mw-redirect title="Bandpass filter" 
+href="http://en.wikipedia.org/wiki/Bandpass_filter">bandpass filter</A>. The 
+actual amount of attenuation for each frequency is a design parameter of the 
+filter.</P>
+<P>The simple first-order electronic high-pass filter shown in Figure&nbsp;1 is 
+implemented by placing an input voltage across the series combination of a <A 
+title=Capacitor href="http://en.wikipedia.org/wiki/Capacitor">capacitor</A> and 
+a <A title=Resistor href="http://en.wikipedia.org/wiki/Resistor">resistor</A> 
+and using the voltage across the resistor as an output. The product of the 
+resistance and capacitance (<I>R</I>×<I>C</I>) is the <A title="Time constant" 
+href="http://en.wikipedia.org/wiki/Time_constant">time constant</A> (τ); it is 
+inversely proportional to the cutoff frequency <I>f</I><SUB><I>c</I></SUB>, at 
+which the output power is half the input power. That is,</P>
+<P><IMG alt="" src="hpf1.png"></P>
+<P>where <I>f</I><SUB><I>c</I></SUB> is in <A title=Hertz 
+href="http://en.wikipedia.org/wiki/Hertz">hertz</A>, <I>τ</I> is in <A 
+title=Second href="http://en.wikipedia.org/wiki/Second">seconds</A>, <I>R</I> is 
+in <A class=mw-redirect title="Ohm (unit)" 
+href="http://en.wikipedia.org/wiki/Ohm_%28unit%29">ohms</A>, and <I>C</I> is in 
+<A title=Farad 
+href="http://en.wikipedia.org/wiki/Farad">farads</A>.</P>
+<P><IMG alt="" src="hpf3.png"></P>
+<P><EM>Figure 1: Passive High pass Filter</EM></P>
+<P>      &nbsp;</P>
+<P>Figure&nbsp;2 shows an active electronic implementation 
+of a first-order high-pass filter using an <A title="Operational amplifier" 
+href="http://en.wikipedia.org/wiki/Operational_amplifier">operational 
+amplifier</A>. In this case, the filter has a <A title=Passband 
+href="http://en.wikipedia.org/wiki/Passband">passband</A> gain of 
+-<I>R</I><SUB>2</SUB>/<I>R</I><SUB>1</SUB> and has a corner frequency of</P>
+<P><IMG alt="" src="hpf2.png"></P>
+<P>Because this filter is <A 
+title="Passivity (engineering)" 
+href="http://en.wikipedia.org/wiki/Passivity_%28engineering%29">active</A>, it 
+may have <A class=mw-redirect title="Unity (mathematics)" 
+href="http://en.wikipedia.org/wiki/Unity_%28mathematics%29">non-unity</A> 
+passband gain. That is, high-frequency signals are inverted and amplified by 
+<I>R</I><SUB>2</SUB>/<I>R</I><SUB>1</SUB>.</P>
+<P><IMG alt="" src="hpf4.png"></P>
+<P><EM>Figure 2: Active High Pass Filter</EM></P>
+<P><EM></EM>&nbsp;</P>
+<P><IMG alt="" src="220px-75_Hz_HPF_on_Smaart.jpg"></P>
+<P><EM>Figure 3:&nbsp;Frequency 
+Response&nbsp;Waveform</EM></P></body>
+</html>

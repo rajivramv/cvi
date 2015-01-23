@@ -1,0 +1,148 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Low-Pass Filter</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+html,body { 
+	/* Default Font */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+</style>
+
+</head>
+
+<body>
+<H1 class=firstHeading id=firstHeading><FONT size=5>Low-pass filter (LPF)</FONT></H1>
+<P>A <B>low-pass filter</B> is a <A title="Filter (signal processing)" 
+href="http://en.wikipedia.org/wiki/Filter_%28signal_processing%29">filter</A> 
+that passes low-<A title=Frequency 
+href="http://en.wikipedia.org/wiki/Frequency">frequency</A> <A class=mw-redirect 
+title="Signal (electrical engineering)" 
+href="http://en.wikipedia.org/wiki/Signal_%28electrical_engineering%29">signals</A> 
+but <A class=mw-redirect title=Attenuate 
+href="http://en.wikipedia.org/wiki/Attenuate">attenuates</A> (reduces the <A 
+title=Amplitude href="http://en.wikipedia.org/wiki/Amplitude">amplitude</A> of) 
+signals with frequencies higher than the <A title="Cutoff frequency" 
+href="http://en.wikipedia.org/wiki/Cutoff_frequency">cutoff frequency</A>. The 
+actual amount of attenuation for each frequency varies from filter to filter. It 
+is sometimes called a <B>high-cut filter</B>, or <B>treble cut filter</B> when 
+used in audio applications. A low-pass filter is the opposite of a <A 
+title="High-pass filter" 
+href="http://en.wikipedia.org/wiki/High-pass_filter">high-pass filter</A>. A <A 
+title="Band-pass filter" 
+href="http://en.wikipedia.org/wiki/Band-pass_filter">band-pass filter</A> is a 
+combination of a low-pass and a high-pass.</P>
+<P>Low-pass filters exist in many different forms, including electronic circuits 
+(such as a <I>hiss filter</I> used in <A class=mw-redirect 
+title="Sound recording" 
+href="http://en.wikipedia.org/wiki/Sound_recording">audio</A>), <A 
+title="Anti-aliasing filter" 
+href="http://en.wikipedia.org/wiki/Anti-aliasing_filter">anti-aliasing 
+filters</A> for conditioning signals prior to <A class=mw-redirect 
+title="Analog-to-digital conversion" 
+href="http://en.wikipedia.org/wiki/Analog-to-digital_conversion">analog-to-digital 
+conversion</A>, <A title="Digital filter" 
+href="http://en.wikipedia.org/wiki/Digital_filter">digital filters</A> for 
+smoothing sets of data, acoustic barriers, blurring of images, and so on. The <A 
+class=mw-redirect title="Moving average (finance)" 
+href="http://en.wikipedia.org/wiki/Moving_average_%28finance%29">moving 
+average</A> operation used in fields such as finance is a particular kind of 
+low-pass filter, and can be analyzed with the same <A title="Signal processing" 
+href="http://en.wikipedia.org/wiki/Signal_processing">signal processing</A> 
+techniques as are used for other low-pass filters. Low-pass filters provide a 
+smoother form of a signal, removing the short-term fluctuations, and leaving the 
+longer-term trend.</P>
+<H3><SPAN class=mw-headline id=Passive_electronic_realization>Passive electronic 
+realization</SPAN></H3>
+<DIV class="thumb tright"><IMG alt="" src="lpf1.png"></DIV>
+<DIV class="thumb tright"><EM>Figure 1: Passive Low-Pass 
+Filter</EM></DIV>
+<P>One simple <A class=mw-redirect title="Electrical circuit" 
+href="http://en.wikipedia.org/wiki/Electrical_circuit">electrical circuit</A> 
+that will serve as a low-pass filter consists of a <A title=Resistor 
+href="http://en.wikipedia.org/wiki/Resistor">resistor</A> in series with a <A 
+class=mw-redirect title="External electric load" 
+href="http://en.wikipedia.org/wiki/External_electric_load">load</A>, and a <A 
+title=Capacitor href="http://en.wikipedia.org/wiki/Capacitor">capacitor</A> in 
+parallel with the load. The capacitor exhibits <A class=mw-redirect 
+title="Reactance (electronics)" 
+href="http://en.wikipedia.org/wiki/Reactance_%28electronics%29">reactance</A>, 
+and blocks low-frequency signals, causing them to go through the load instead. 
+At higher frequencies the reactance drops, and the capacitor effectively 
+functions as a short circuit. The combination of resistance and capacitance 
+gives you the <A title="Time constant" 
+href="http://en.wikipedia.org/wiki/Time_constant">time constant</A> of the 
+filter <SPAN class=texhtml>τ = <I>R</I><I>C</I></SPAN> (represented by the Greek 
+letter <A title=Tau href="http://en.wikipedia.org/wiki/Tau">tau</A>). The break 
+frequency, also called the turnover frequency or <A title="Cutoff frequency" 
+href="http://en.wikipedia.org/wiki/Cutoff_frequency">cutoff frequency</A> (in 
+hertz), is determined by the time constant:</P>
+<DL>
+  <DD><IMG alt="" src="lpf3.png"></DD></DL>
+<P>or equivalently (in <A class=mw-redirect title=Radians 
+href="http://en.wikipedia.org/wiki/Radians">radians</A> per second):</P>
+<DL>
+  <DD><IMG alt="" src="lp4.png"></DD></DL>
+<P>One way to understand this circuit is to focus on the time the capacitor 
+takes to charge. It takes time to charge or discharge the capacitor through that 
+resistor:</P>
+<UL>
+  <LI>At low frequencies, there is plenty of time for the 
+  capacitor to charge up to practically the same voltage as the input voltage. 
+  <LI>At high frequencies, the capacitor only has time to charge up a small 
+  amount before the input switches direction. The output goes up and down only a 
+  small fraction of the amount the input goes up and down. At double the 
+  frequency, there's only time for it to charge up half the amount.</LI></UL>
+<P>Another way to understand this circuit is with the idea of <A 
+class=mw-redirect title="Reactance (electronics)" 
+href="http://en.wikipedia.org/wiki/Reactance_%28electronics%29">reactance</A> at 
+a particular frequency:</P>
+<UL>
+  <LI>Since <A title="Direct current" 
+  href="http://en.wikipedia.org/wiki/Direct_current">DC</A> cannot flow through 
+  the capacitor, DC input must "flow out" the path marked <SPAN 
+  class=texhtml><I>V</I><SUB>out</SUB></SPAN> (analogous to removing the capacitor). 
+  <LI>Since <A title="Alternating current" 
+  href="http://en.wikipedia.org/wiki/Alternating_current">AC</A> flows very well 
+  through the capacitor — almost as well as it flows through solid wire — AC 
+  input "flows out" through the capacitor, effectively <A title="Short circuit" 
+  href="http://en.wikipedia.org/wiki/Short_circuit">short circuiting</A> to 
+  ground (analogous to replacing the capacitor with just a wire).</LI></UL>
+<P>The capacitor is not an "on/off" object (like the block or pass fluidic 
+explanation above). The capacitor will variably act between these two extremes. 
+It is the <A title="Bode plot" 
+href="http://en.wikipedia.org/wiki/Bode_plot">Bode plot</A> and <A 
+title="Frequency response" 
+href="http://en.wikipedia.org/wiki/Frequency_response">frequency response</A> 
+that show this variability.</P>
+<H3><SPAN class=mw-headline id=Active_electronic_realization>Active electronic 
+realization</SPAN></H3>
+<DIV class="thumb tright"><IMG alt="" src="lpf2.png"></DIV>
+<DIV class="thumb tright"><EM>Figure 2:&nbsp;Active 
+Low-Pass Filter</EM></DIV>
+<P>Another type of electrical circuit is an <I>active</I> low-pass filter.</P>
+<P>In the <A title="Operational amplifier" 
+href="http://en.wikipedia.org/wiki/Operational_amplifier">operational 
+amplifier</A> circuit shown in the figure, the cutoff frequency (in <A 
+title=Hertz href="http://en.wikipedia.org/wiki/Hertz">hertz</A>) is defined 
+as:</P>
+<DL>
+  <DD><IMG alt="" src="lpf5.png"></DD></DL>
+<P>or equivalently (in radians per second):</P>
+<DL>
+  <DD><IMG alt="" src="lpf6.png"></DD></DL>
+<P>The gain in the passband is −<I>R</I><SUB>2</SUB>/<I>R</I><SUB>1</SUB>, and 
+the <A title=Stopband href="http://en.wikipedia.org/wiki/Stopband">stopband</A> 
+drops off at −6&nbsp;dB per octave as it is a first-order 
+filter.</P>
+<P><IMG alt="" src="lpf7.png"> 
+           
+</P>
+<P><EM>Figure 3: The gain-magnitude frequency response of a 
+first-order (one-pole) low-pass filter.</EM> 
+           
+</P></body>
+</html>

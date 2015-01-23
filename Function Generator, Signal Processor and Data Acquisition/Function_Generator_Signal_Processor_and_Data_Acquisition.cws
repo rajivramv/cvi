@@ -1,0 +1,95 @@
+[Workspace Header]
+Version = 710
+Pathname Line0001 = "/d/CVI/Assignments/Function Generator, Signal Processor and Data Acquisition/Fun"
+Pathname Line0002 = "ction_Generator_Signal_Processor_and_Data_Acquisition.cws"
+CVI Dir = "/e/program files/national instruments/cvi71"
+IVI Standard Root Dir = "/C/Program Files/IVI"
+VXIplug&play Framework Dir = "/c/vxipnp/winnt"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "Function_Generator_Signal_Processor_and_Data_Acquisition.prj"
+Drag Bar Left = 268
+Window Top = 30
+Window Left = 402
+Window Bottom = 532
+Window Right = 823
+Maximized = True
+Maximized Children = True
+Max Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win For Warnings = True
+Show Build Dialog = False
+Save Changes Before Running = "Always"
+Hide Windows = False
+Global Hot Key = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 2
+Window Confinement Region Enabled = True
+MainColumnWidth = 249
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+StatusColumnWidth = 70
+
+[Project Header 0001]
+Version = 710
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path Line0001 = "/d/CVI/Assignments/Function Generator, Signal Processor and Data Acquisition/Fun"
+Path Line0002 = "ction_Generator_Signal_Processor_and_Data_Acquisition.c"
+File Type = "CSource"
+Disk Date = 3401682568
+In Projects = "1,"
+Window Top = 88
+Window Left = 48
+Window Z-Order = 1
+Source Window State = "1,933,934,933,21,21,21,0,0,122,0,479,0,1,0,51,899,0,934,21,335,722,1,0,"
+
+[File 0002]
+Path Line0001 = "/d/CVI/Assignments/Function Generator, Signal Processor and Data Acquisition/Fun"
+Path Line0002 = "ction_Generator_Signal_Processor_and_Data_Acquisition.uir"
+File Type = "User Interface Resource"
+Disk Date = 3401650254
+In Projects = "1,"
+Window Top = 59
+Window Left = 26
+Window Height = 335
+Window Width = 722
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+Enable Remote Debugging = False
+Remote Debugger Address = "localhost"
+Remote Target Address = ""
+Remote Debugging Port = 3291
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = True
+Suppress CVI Error Messages = False
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Band-Stop Filter</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+html,body { 
+	/* Default Font */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+</style>
+
+</head>
+
+<body>
+<H1 class=firstHeading id=firstHeading><FONT size=5>Band-stop filter</FONT></H1>
+<P>In <A title="Signal processing" 
+href="http://en.wikipedia.org/wiki/Signal_processing">signal processing</A>, a 
+<B>band-stop filter</B> or <B>band-rejection filter</B> is a <A 
+title="Filter (signal processing)" 
+href="http://en.wikipedia.org/wiki/Filter_%28signal_processing%29">filter</A> 
+that passes most <A title=Frequency 
+href="http://en.wikipedia.org/wiki/Frequency">frequencies</A> unaltered, but <A 
+class=mw-redirect title=Attenuate 
+href="http://en.wikipedia.org/wiki/Attenuate">attenuates</A> those in a specific 
+range to very low levels. It is the opposite of a <A title="Band-pass filter" 
+href="http://en.wikipedia.org/wiki/Band-pass_filter">band-pass filter</A>. A 
+<B>notch filter</B> is a band-stop filter with a narrow <A title=Stopband 
+href="http://en.wikipedia.org/wiki/Stopband">stopband</A> (high <A 
+title="Q factor" href="http://en.wikipedia.org/wiki/Q_factor">Q factor</A>).</P>
+<P>Narrow notch filters (<A class=mw-redirect title=Optical 
+href="http://en.wikipedia.org/wiki/Optical">optical</A>) are used in <A 
+class=mw-redirect title="Raman Spectroscopy" 
+href="http://en.wikipedia.org/wiki/Raman_Spectroscopy">Raman Spectroscopy</A>, 
+live sound reproduction (<A class=mw-redirect title="Public Address system" 
+href="http://en.wikipedia.org/wiki/Public_Address_system">Public Address 
+systems</A>, also known as PA systems) and in <A title="Instrument amplifier" 
+href="http://en.wikipedia.org/wiki/Instrument_amplifier">instrument 
+amplifier</A> (especially amplifiers or preamplifiers for acoustic instruments 
+such as acoustic guitar, mandolin, <A title="Double bass" 
+href="http://en.wikipedia.org/wiki/Double_bass">bass instrument amplifier</A>, 
+etc.) to reduce or prevent <A title="Audio feedback" 
+href="http://en.wikipedia.org/wiki/Audio_feedback">feedback</A>, while having 
+little noticeable effect on the rest of the frequency spectrum (<A 
+title=Electronics href="http://en.wikipedia.org/wiki/Electronics">electronic</A> 
+or <A title="Computer software" 
+href="http://en.wikipedia.org/wiki/Computer_software">software</A> filters). 
+Other names include 'band limit filter', 'T-notch filter', 'band-elimination 
+filter', and 'band-reject filter'.</P>
+<P>Typically, the width of the stopband is less than 1 to 2 <A 
+title="Decade (log scale)" 
+href="http://en.wikipedia.org/wiki/Decade_%28log_scale%29">decades</A> (that is, 
+the highest frequency attenuated is less than 10 to 100 times the lowest 
+frequency attenuated). In the <A title="Audio frequency" 
+href="http://en.wikipedia.org/wiki/Audio_frequency">audio</A> band, a notch 
+filter uses high and low frequencies that may be only <A title=Semitone 
+href="http://en.wikipedia.org/wiki/Semitone">semitones</A> apart.</P>
+<P><B>Audio example 1: Anti-hum filter for countries using 60 Hz <A 
+title="Electric power transmission" 
+href="http://en.wikipedia.org/wiki/Electric_power_transmission">power 
+lines</A></B></P>
+<UL>
+  <LI>Low Freq: 59 <A title=Hertz 
+  href="http://en.wikipedia.org/wiki/Hertz">Hz</A>
+  <LI>High Freq: 61 <A title=Hertz 
+  href="http://en.wikipedia.org/wiki/Hertz">Hz</A></LI></UL>
+<P>This means that the filter passes all frequencies, except for the range of 
+59–61 Hz. This would be used to filter out the <A title="Mains hum" 
+href="http://en.wikipedia.org/wiki/Mains_hum">mains hum</A> from the 60 Hz power 
+line, though its higher harmonics could still be present. The common European 
+version of the filter would have a 49–51 Hz range.</P>
+<P><B>Audio example 2: Anti-presence filter</B></P>
+<UL>
+  <LI>Low Freq: 1 <A class=mw-redirect title=KHz 
+  href="http://en.wikipedia.org/wiki/KHz">kHz</A>
+  <LI>High Freq: 4 <A class=mw-redirect title=KHz 
+  href="http://en.wikipedia.org/wiki/KHz">kHz</A></LI></UL>
+<P><B>RF example 1: Non-linearities of power amplifiers</B> For instance, when 
+measuring non-linearities of power amplifiers a very narrow notch filter could 
+be very useful to avoid the carrier so maximum input power of e.g. a spectrum 
+analyser used to detect spurious content will not be exceeded.</P>
+<P><B>RF example 2: Wave trap</B> A notch filter, usually a simple LC circuit, 
+used to remove a specific interfering frequency. This is a technique used with 
+radio receivers that are so close to a transmitter that it swamps all other 
+signals. The wave trap is used to remove, or greatly reduce, the signal from the 
+local transmitter.<SUP class=reference id=cite_ref-0><A 
+href="http://en.wikipedia.org/wiki/Band-stop_filter#cite_note-0"><SPAN>[</SPAN>1<SPAN>]</SPAN></A></SUP></P>
+<P>Optical notch filters sometimes rely on destructive <A 
+title="Interference (wave propagation)" 
+href="http://en.wikipedia.org/wiki/Interference_%28wave_propagation%29">interference</A>.</P>
+<P><IMG alt="" src="a_bandstop.jpg"><IMG alt="" 
+src="Frequency-Response-Twin-t-active-notch-filter.jpg"></P>
+<P>Figure 1: Active Band Stop Filter and its Frequency 
+Response</P>
+<P><IMG alt="" 
+src="320px-Ideal_Band_Stop_Filter_Transfer_Function.svg.png"></P>
+<P><EM>Figure 2: A generic ideal band-stop filter, showing 
+both positive and negative </EM><A title="Angular frequency" 
+href="http://en.wikipedia.org/wiki/Angular_frequency"><EM>angular 
+frequencies</EM></A></P></body>
+</html>
